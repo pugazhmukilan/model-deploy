@@ -59,7 +59,7 @@ class _deployState extends State<deploy> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar:AppBar(title:Text("Model deployment"),
+      appBar:AppBar(title:const Text("Model deployment"),
       ),
 
       body:Column(
@@ -69,14 +69,14 @@ class _deployState extends State<deploy> {
               //CALL THE PREDICT FUNCTION ADN LOADING MODELS ALL OTHER THINDS GERE
               predictmodel("assets/leaf_1.jpg");
             },
-            child:Text("predict")
+            child:const Text("predict")
           ),
 
 
 
           Container(
             color:Colors.grey,
-            child: Text(value.isempty? "no value":value,style:TextStyle(fontFamily: "inter",fontWeight: FontWeight.w200,fontSize:10)),
+            child: Text(value.isempty? "no value":value,style:const TextStyle(fontFamily: "inter",fontWeight: FontWeight.w200,fontSize:10)),
           )
         ],
       ),
